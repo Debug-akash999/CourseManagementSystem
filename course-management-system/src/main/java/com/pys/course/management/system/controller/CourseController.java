@@ -52,10 +52,6 @@ public class CourseController {
         return ResponseEntity.noContent().build(); // 204 NO CONTENT
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Void> getStudentByCourseId(@PathVariable Long id) {
-        courseService.deleteCourse(id);
-        return ResponseEntity.noContent().build(); // 204 NO CONTENT
-    }
+
 }
 
